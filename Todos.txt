@@ -1,0 +1,15 @@
+//inicializar projeto
+react-native init modulo06
+//instalar
+yarn add eslint -D
+yarn eslint --init
+excluir package.lock.json
+yarn
+
+//instalar para utilizar o prettier eslint e babel
+yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+//configurar editor config, eslint e prettierrc
+
+//instalar para utilizar o import
+yarn add babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import -D
+//nao esquecer de criar o jsconfig.json para configurar no VSCode o ~ como import
