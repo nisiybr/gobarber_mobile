@@ -5,11 +5,11 @@ import { updateProfileSuccess, updateProfileFailure } from './actions';
 
 export function* updateProfile({ payload }) {
   try {
-    const { name, email, avatar_id, ...rest } = payload.data; // eslint-disable-line
+    const { name, email, ...rest } = payload.data; // eslint-disable-line
 
     const profile = Object.assign( // eslint-disable-line
       // serve para unir dois objetos
-      { name, email, avatar_id }, // eslint-disable-line
+      { name, email, }, // eslint-disable-line
       // se no restante das informacoes eu tiver oldPassword preenchido
       // quer dizer que o usuario preencheu a senha atual e quer preencher o restante
       // se eu tiver algo em oldPassword, entao carrego o restante
