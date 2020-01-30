@@ -170,7 +170,7 @@ android {
         }
         releaseStaging {
           buildConfigField "String", "CODEPUSH_KEY", '"M4DBB8GbRQsvQe2Z16d2qZBzMPDwCq24S6Y4g"'
-          matchingFallBacks = ['debug','release']
+          matchingFallbacks = ['debug','release']
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
